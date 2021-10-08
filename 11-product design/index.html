@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Design</title>
+    <link rel="stylesheet" href="css/External files/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- --------------start navbar----------------- -->
+    <nav class="navbar navbar-expand-lg bg-dark container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>      
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-border-none mr-2"></i>Swap Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-camera mr-2"></i>Add Image</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-font mr-2"></i>Add Text</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-images mr-2"></i>Choose From Designs</a>
+              </li>
+          </ul>
+      </nav>
+    <!-- --------------end navbar----------------- -->
+   <div class="modal" id="m1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">
+             <i class="fas fa-ellipsis-v mr-2"></i>ADD TEXT
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <textarea placeholder="Enter Some Text" name="" id="textarea" width="100%"></textarea>
+          <br>
+          <button class="btn btn-success btn-add-text">ADD TEXT-$2</button>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-light btn-large pt-5 pb-5 pl-4 pr-4 btn-enter">Enter your Text</button>
+          <button class="btn btn-light btn-large p-5 btn-enter">Welcome To My World</button>
+          
+          <button class="btn btn-light btn-large p-5 btn-enter">Enter your Text</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- swap img -->
+  <div class="modal" id="m2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">
+             <i class="fas fa-ellipsis-v mr-2"></i>Swap Product
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <div class="imgs">
+            <img src="images/th (1).jpg" alt="" width="150px">
+            <img src="images/th (2).jpg" alt="" width="150px">
+            <img src="images/th (3).jpg" alt="" width="150px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- add img -->
+  <div class="modal" id="m3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">
+             <i class="fas fa-ellipsis-v mr-2"></i>Add Image
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="imgs-modal">
+            <span><a href="#" class="uploadImgs"><i class="fas fa-cloud-upload"></i></a></span>
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><a href="#" class="imgIcon"><i class="far fa-images"></i></a></span>
+            <span><i class="fas fa-camera-retro"></i></span>
+          </div>
+          <div class="upload" id="upload">
+            <input type="file" hidden class="defaultBtn">
+            <button class="btn-img customBtn"><i class="fal fa-cloud-upload"></i></button>
+            <p>Click or drop images here</p>
+            <p>$4</p>
+          </div>
+          <div id="images">
+            <img src="images/10.jpg" alt="">
+            <img src="images/5.jpg" alt="">
+            <img src="images/6.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+            <img src="images/8.jpg" alt="">
+            <img src="images/11.jpg" alt="">
+            <img src="images/12.jpg" alt="">
+            <img src="images/13.jpg" alt="">
+            <img src="images/14.jpg" alt="">
+            <img src="images/15.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="m4" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title">
+             <i class="fas fa-ellipsis-v mr-2"></i>Choose From Designs
+          </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Choose From Designs
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="t-shirt mt-5" >
+      <img class="mainImg" src="images/th.jpg" alt="">
+      <textarea class="addedtextarea" name="" id=""></textarea>
+      <!-- icons -->
+      <div class="icons p-3">
+        <span id="color"><input type="color"></span>
+        <span  id="number"><input class="icon" type="number" value="30" width="20px"></span>
+        <span id="edit-text">Edit Text</span>
+        <span>
+          <span class="icon" id="bold"><i class="fas fa-bold"></i></span>
+          <span class="icon" id="italic"><i class="fas fa-italic"></i></span>
+          <span class="icon" id="underline"><i class="fas fa-underline"></i></span>
+        </span>
+        <span class="icon mt-3" id="center"><i class="fas fa-align-center"></i></span>
+        <span class="text-transform mt-3" id="text-transform">Aa</span>
+      </div>
+      <div class="add-img">
+        <img src="" alt="">
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="js/External files/bootstrap.min.js"></script>
+    <script src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

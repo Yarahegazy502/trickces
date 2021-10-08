@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .players{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.players h2{
+    margin: 40px;
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.box table{
+    width: 100%;
+}
+.box table,td{
+    border: 1px solid #111;
+    border-collapse: collapse;
+}
+td{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}

@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul li{
+    list-style: none;
+}
+.bg{
+    background-image: url(imgs/category.jpg.webp);
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bg h1{
+    font-size: 70px;
+}
+.cart{
+    margin: 40px 40px;
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category .price nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category .price nav ul li{
+    margin: 0 40px;
+    font-size: 20px;
+}
+.hr{
+    margin: 15px 0;
+}
+.product img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #777;
+}
+.product span{
+    font-size: 20px;
+}
+.product .p{
+    margin-left: 15px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count span{
+    border: 1px solid #111;
+    padding:0px 10px;
+    cursor: pointer;
+}
+.count .c1{
+    /* margin-right: -6px; */
+    border-right: 0;
+}
+.count span .c2 .p1{
+    border-bottom: 1px solid #111;
+}
+.del1,.del2{
+    margin-left: 20px ;
+    background-color: crimson;
+    padding: 7px 15px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}

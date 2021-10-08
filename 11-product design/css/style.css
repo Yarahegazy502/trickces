@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* frame work */
+a{
+    text-decoration: none;
+    color: #000019;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left:2rem;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.t-shirt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    flex-direction: column;
+}
+.t-shirt img{
+    width: 500px;
+    height: 500px;
+
+}
+.text{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text-add{
+    width: 400px;
+    position: relative;
+    color: #fff;
+    background-color: #f5f0f0;
+
+}
+ .t-shirt {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.t-shirt textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    border: 2px dashed #fff;
+    padding-left: 5px;
+    display: none;
+    /* font-size: 20px; */
+}
+.t-shirt textarea.active{
+    display: block;
+}
+.t-shirt textarea:focus{
+    outline: 0;
+}
+.close{
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.close:hover{
+    color: #fff;
+}
+.textarea{
+    width: 400px !important;
+    
+}
+
+.modal{
+    /* display: block; */
+    top: 55px;
+}
+.modal.active{
+    display: block;
+}
+.modal-body textarea{
+    width: 100%;
+}
+.icons{
+    position: absolute;
+    top: 60%;
+    width: 350px;
+    height: 120px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+    background-color: #f5f0f0;
+    display: none;
+}
+.icons>span{
+    border-radius: 5px;
+    background-color: #fff;
+    padding:  5px 7px;
+    margin:10px 5px;
+}
+.icons  input {
+    border: 0;
+    width: 40px;
+    appearance: none;
+}
+.icons.active{
+    display: block;
+}
+#bold{
+    font-weight: bold;
+}
+#underline{
+    text-decoration: underline;
+}
+#italic{
+    font-style: italic;
+}
+#center{
+    text-align: center;
+}
+.imgs-modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.imgs-modal span{
+    /* background-color: #f5f0f0; */
+    cursor: pointer;
+}
+.add-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+.add-img.active{
+    display: block;
+}
+.add-img img{
+    width: 300px;
+    height: 200px;
+}
+.upload{
+    border: 2px dashed #f5f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 20px;
+    padding: 10px;
+}
+.upload.hidden{
+    display: none;
+}
+.upload p{
+    color: #777;
+}
+.btn-img{
+    border: 0;
+    font-size: 30px;
+    background-color: transparent;
+    text-align: center;
+}
+#images{
+    display: none;
+}
+#images.active{
+    display: block;
+}

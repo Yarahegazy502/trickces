@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 5;
+}
+.board{
+    /* background-color: coral; */
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    /* background-color: crimson; */
+    border: 1px solid #111;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+}
+.cell:nth-of-type(1),.cell:nth-of-type(2),.cell:nth-of-type(3){
+    border-top: 0;
+}
+
+.cell:nth-of-type(3),.cell:nth-of-type(6),.cell:nth-of-type(9){
+    border-right: 0;
+}
+.cell:nth-of-type(4),.cell:nth-of-type(1),.cell:nth-of-type(7){
+    border-left: 0;
+}
+.cell:nth-of-type(7),.cell:nth-of-type(8),.cell:nth-of-type(9){
+    border-bottom: 0;
+}
+#winningMessage{
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+#restartBtn{
+    border: 0;
+    background-color: crimson;
+    color: #fff;
+    font-size: 19px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
